@@ -1,0 +1,290 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+
+/* Nav */
+
+.nav-wrapper {
+  background-image: linear-gradient(180deg, rgb(230, 230, 230), rgb(180, 180, 180));
+}
+
+.top-header-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.top-header {
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-image: linear-gradient(180deg, #266096, #266096);
+  color:#d5d5d5;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.top-header, .star-span, .call-span  {
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+  padding-right: .5rem;
+  color: black;
+}
+
+.top-header-num {
+  padding-right: .5rem;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  
+}
+
+.header-logo {
+  padding-left: .8rem;
+}
+
+.header-span {
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.link {
+  text-decoration: none;
+  color:#d5d5d5;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.hr-nav {
+  border: none;
+  margin: 0;
+  border-right: 1.5px solid #8ea2a2;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 310px;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 4rem;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+}
+
+/* Home Page */
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 290px;
+}
+
+
+
+.check-list {
+  background-color: #d9d9d9;
+  margin: 0;
+  padding: 1rem;
+  grid-row: 1 / 2;
+}
+
+.list-span {
+  display: flex;
+  justify-content: center;
+}
+
+.home-title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.hr-home {
+  border: none;
+  width: 70%;
+  border-top: 1.5px solid #000000 ;
+
+}
+
+.home-us {
+  background-color: #d9d9d9;
+  padding: 1rem 2rem;
+  grid-row: 2 / 3;
+}
+
+.home-about {
+  margin: auto;
+  max-width: 450px;
+}
+
+.us-title {
+  text-align: center;
+}
+
+.blue-box {
+  z-index: -1;
+  background-image: url(./assets/rain.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: .7;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.pipes {
+  background-image: url(./assets/pipes.jpeg);
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+  background-size: cover;
+}
+
+/* About Page */
+
+.about-wrapper {
+  position: relative;
+}
+
+.about-container {
+  padding: 8rem 1rem;
+  
+}
+
+
+@media screen and (max-width: 650px) {.about-container {padding: 3rem 1rem}}
+
+.about-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(./assets/plumbing.jpeg);
+  opacity: .6;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.box-wrapper {
+  margin: auto;
+  position: relative;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  z-index: -1;
+}
+
+.box {
+  background-color: #eaeaea;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5px #266096;
+}
+
+
+
+
+/* Services Page */
+
+.services-wrapper {
+  min-height: 400px;
+}
+
+.services-title {
+  padding: 5rem;
+  text-transform: capitalize;
+}
+
+/* Footer */
+
+.footer-wrapper {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, rgb(223, 246, 252), rgb(173, 194, 212));
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.footer-info {
+  width: 250px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-hours {
+  width: 250px;
+}
+
+.hours-title {
+  margin: 0;
+}
+
+.hours {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-span {
+  width: 200px;
+  text-align: center;
+}
+
+.apps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.apps-icon {
+  font-size: 2rem;;
+}
+
+.footer-phone {
+  padding: 2rem 0;
+}
+
