@@ -255,6 +255,7 @@ li {
   display: flex;
   justify-content: center;
   margin: auto;
+  height: 80px;
 }
 
 .footer-hours {
@@ -281,10 +282,63 @@ li {
 }
 
 .apps-icon {
-  font-size: 2rem;;
+  font-size: 2rem;
 }
 
 .footer-phone {
   padding: 2rem 0;
 }
 
+
+@media screen and (max-width: 750px) {
+  .home-about {font-size: .9rem;}
+  .link, .footer-wrapper {font-size: .8em}
+  .links {gap: 1rem;}
+  .apps-icon {font-size: 1rem;}
+  .apps {justify-content: center; gap: 1rem;}
+  .footer-phone {font-size: .9rem;}
+  .footer-logo {height: 50px;}}
+
+  @media screen and (max-width: 650px) {
+    .top-header-call, .top-header-num, .star-icon {font-size: .8rem;}
+    .home-about {font-size: .8rem;}
+    ul {padding-bottom: 3rem; font-size: .9rem;}
+    h2 {font-size: 1.2rem;}
+    .link, .footer-wrapper {font-size: .8em}
+    .links {gap: 1rem;}
+    .apps-icon {font-size: 1rem;}
+    .apps {justify-content: center; gap: 1rem;}
+    .footer-phone {font-size: .9rem;}
+    .footer-logo {height: 50px;}}
+
+    @media screen and (max-width: 550px) {
+      .footer-wrapper {padding: .5rem;}
+      .top-header-call, .top-header-num, .star-icon  {font-size: .6rem;}
+      .home-us {padding: 0 .8rem;}
+      .home-about {font-size: .75rem;}
+      ul {padding-bottom: 3rem; font-size: .7rem;}
+      h2 {font-size: .89rem;}
+      h3 {font-size: .89rem;}
+      .link, .footer-wrapper {font-size: .8em}
+      .links {gap: 1rem;}
+      .apps-icon {font-size: 1rem;}
+      .apps {justify-content: center; gap: 1rem;}
+      .footer-phone {font-size: .9rem;}
+      .footer-logo {height: 50px;}}
+
+      @media screen and (max-width: 450px) {
+        .top-header-call, .top-header-num, .star-icon  {font-size: .6rem;}
+        .home-us {padding: 0 .5rem;}
+        .home-about {font-size: .65rem;}
+        ul {padding-bottom: 3rem; font-size: .6rem;}
+        h2 {font-size: .89rem;}
+        h3 {font-size: .89rem;}
+        .link, .footer-wrapper {font-size: .7em}
+        .footer-wrapper {display: block; padding: .2rem 4rem}
+        .star-span, .call-span {justify-content: center;}
+        .top-header {display: block; margin: auto; text-align: center;}
+        .links {gap: 1rem;}
+        .apps-icon {font-size: 1rem;}
+        .apps {justify-content: center; gap: 1rem;}
+        .footer-phone {font-size: .9rem;}
+        .footer-logo {height: 50px;}}

@@ -26,7 +26,7 @@ export default function Nav() {
                     </span>
                 <span className="call-span">
                 <FontAwesomeIcon className="phone-icon" icon={faPhone} />
-                <p>Give us a call today!</p>
+                <p className="top-header-call">Give us a call today!</p>
                 </span>
             </div>
         </div>

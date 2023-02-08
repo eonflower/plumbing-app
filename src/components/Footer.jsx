@@ -35,7 +35,7 @@ export default function Footer() {
            
 
            <span className="footer-info">
-           <img className="footer-logo" src={logo} style={{height: "80px"}}/> 
+           <img className="footer-logo" src={logo} /> 
            <p>Contact Drain Gang Plumbing today! We offer commercial and residential plumbing repairs, replacements, installations and more.</p>
            </span>
         </div>
